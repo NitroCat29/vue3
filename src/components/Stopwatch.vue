@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="js">
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const startTime = ref(null);

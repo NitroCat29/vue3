@@ -7,18 +7,14 @@
       <p>Double Count: {{ doubleCount }}</p>
     </div>
     <button class="button" @click="increment">Increment</button>
-    
   </div>
 </template>
 
-<script>
+<script setup lang="js">
 import { ref, computed, watch } from "vue";
 
-export default {
-  setup() {
-    const count = ref(0);
-    
-    const doubleCount = computed(() => {
+const count = ref(0);
+const doubleCount = computed(() => {
       return count.value * 2;
     });
 
@@ -29,12 +25,4 @@ export default {
     function increment() {
       count.value++;
     }
-
-    return {
-      count,
-      doubleCount,
-      increment,
-    };
-  },
-};
 </script>

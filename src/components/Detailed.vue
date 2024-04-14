@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="js">
 import { useRoute } from "vue-router";
 const props = defineProps({
   name: { type: String, required: true },

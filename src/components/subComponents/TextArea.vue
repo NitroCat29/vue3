@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
 defineProps({
   modelValue: String,
 });
@@ -22,7 +22,7 @@ const updateVal = (e) => emit("update:modelValue", e.target.value);
 
 <template>
   <textarea
-    name=""
+    name="tab-able textarea"
     @keydown.tab.prevent="onTabPress"
     cols="30"
     rows="10"

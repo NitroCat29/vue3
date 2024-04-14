@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="js">
 import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 
