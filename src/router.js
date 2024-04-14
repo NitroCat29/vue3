@@ -35,6 +35,11 @@ const routes = [
       age: Number(route.query.age),
     }),
   },
+  {
+    path: "/stopwatch",
+    name: "Stopwatch",
+    component: Stopwatch,
+  }
 ];
 
 const router = createRouter({
