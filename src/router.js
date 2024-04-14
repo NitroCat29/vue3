@@ -4,6 +4,7 @@ import About from "./components/About.vue";
 import Count from "./components/Count.vue";
 import List from "./components/List.vue";
 import Detailed from "./components/Detailed.vue";
+import Stopwatch from "./components/Stopwatch.vue";
 
 const routes = [
   {
@@ -39,7 +40,7 @@ const routes = [
     path: "/stopwatch",
     name: "Stopwatch",
     component: Stopwatch,
-  }
+  },
 ];
 
 const router = createRouter({

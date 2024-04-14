@@ -16,9 +16,8 @@ const onTabPress = (e) => {
 
   textarea.selectionStart = textarea.selectionEnd = start + 1;
 };
-function updateVal(e) {
-  emit("update:modelValue", e.target.value);
-}
+
+const updateVal = (e) => emit("update:modelValue", e.target.value);
 </script>
 
 <template>
