@@ -5,6 +5,7 @@ import Count from "./components/Count.vue";
 import List from "./components/List.vue";
 import Detailed from "./components/Detailed.vue";
 import Stopwatch from "./components/Stopwatch.vue";
+import TeamView from "./components/Team/TeamView.vue";
 
 const routes = [
   {
@@ -16,10 +17,6 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
-  },
-  {
-    path: "/count",
-    component: Count,
   },
   {
     path: "/list",
@@ -40,6 +37,16 @@ const routes = [
     path: "/stopwatch",
     name: "Stopwatch",
     component: Stopwatch,
+  },
+  {
+    path: "/counter",
+    name: "Counter",
+    component: Count,
+  },
+  {
+    path: "/team",
+    name: "Team",
+    component: TeamView,
   },
 ];
 
